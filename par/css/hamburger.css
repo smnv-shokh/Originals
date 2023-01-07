@@ -1,0 +1,91 @@
+.ham{
+    display: block;
+    height: 52px;
+    width: 52px;
+    float: right;
+    position: relative;
+    background: #171717;
+    margin-top: 40px;
+    transition: .6s;
+    z-index: 0;
+}
+
+.ham>.hamline{
+    width: 50%;
+    height: 2px;
+    background: rgb(212, 212, 212);
+    margin-left: 25%;
+    margin-top: 25px;
+    position: absolute;
+    transition: .2s;
+}
+
+.ham>.hamline::before,
+.ham>.hamline::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgb(212, 212, 212);
+    position: absolute;
+    transition: .2s;
+    
+}
+
+.ham>.hamline::before{
+    transform: translateY(-6px);
+}
+
+.ham>.hamline::after{
+    transform: translateY(6px);
+
+}
+
+.hamb>.hamline::before{
+    transform: rotate(45deg);
+}
+
+.hamb>.hamline::after{
+    transform: rotate(-45deg);
+}
+
+.hamb>.hamline{
+    background: transparent;
+}
+
+.ham:hover>.hamline::before,
+.ham:hover>.hamline::after{
+    background: white;
+}
+
+.hamb:hover>.hamline::before,
+.hamb:hover>.hamline::after{
+    background: white;
+}
+
+.ham:hover>.hamline{
+    background: white;
+}
+
+.hamb:hover>.hamline{
+    background: rgba(255, 255, 255, 0);
+}
+
+.hamwr{
+    margin-left: 76%;
+    width: 20%;
+    height: 100%;
+    line-height: 132px;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    transition: .6s;
+}
+
+.ham1{
+    margin-top: 15px;
+}
+
+.hamwr1{
+    line-height: 82px;
+}
