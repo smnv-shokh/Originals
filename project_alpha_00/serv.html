@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/serv.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">LOGO</div>
+    <div class="hamwrap">
+        <a class="serv" href="serv.html">услуги</a>
+        <div class="ham">
+            <div class="hline1"></div>
+            <div class="hline2"></div>
+         </div>
+    </div>
+
+    <div class="bgholder1">
+        <div class="nd2 a1"><div class="bl"><a href="#" class="q1">Интерьерные решения для<br/> магазинов и ресторанов</a></div></div>
+    </div>
+    <div class="bgholder2">
+        <div class="nd2 a2"><div class="bl"><a href="#" class="q2">Интерьерные решения для дома</a></div></div>
+    </div>
+    <div class="bgholder3">
+        <div class="nd2 a3"><div class="bl"><a href="#" class="q2">Конструкторское бюро</a></div></div>
+    </div>
+
+    <script>
+        let ham = document.querySelector(".ham")
+        let hline1 = document.querySelector(".hline1")
+        let hline2 = document.querySelector(".hline2")
+        let isOpen = false
+        ham.addEventListener("click", function(){
+            if(!isOpen){
+                hline1.classList.add("o")
+                hline2.classList.add("o2")
+                isOpen = true
+            }else if(isOpen){
+                hline1.classList.remove("o")
+                hline2.classList.remove("o2")
+                isOpen = false
+            }
+        })
+        
+        let bgholder1 = document.querySelector(".bgholder1")
+        let bgholder2 = document.querySelector(".bgholder2")
+        let bgholder3 = document.querySelector(".bgholder3")
+        window.onload = function(){
+            bgholder1.style.transform = "translateY(0)"
+            bgholder2.style.transform = "translateY(0)"
+            bgholder3.style.transform = "translateY(0)"
+        }
+        </script>
+</body>
+</html>
